@@ -1,0 +1,151 @@
+{
+  "app": {
+    "name": "Nebula",
+    "version": "3.14.2",
+    "environment": "production",
+    "build": {
+      "commit": "a9f3c2e1b7d8",
+      "timestamp": "2026-01-10T18:42:11Z",
+      "pipeline": "github-actions"
+    }
+  },
+  "users": [
+    {
+      "id": "u_1001",
+      "profile": {
+        "username": "nightcoder",
+        "email": "nightcoder@example.com",
+        "created_at": "2024-06-11T09:12:45Z",
+        "verified": true,
+        "roles": ["admin", "developer"]
+      },
+      "preferences": {
+        "theme": "dark",
+        "language": "en-US",
+        "notifications": {
+          "email": true,
+          "sms": false,
+          "push": true
+        }
+      },
+      "stats": {
+        "logins": 482,
+        "last_login": "2026-01-10T22:01:03Z",
+        "projects_owned": 12
+      }
+    },
+    {
+      "id": "u_1002",
+      "profile": {
+        "username": "datastream",
+        "email": "datastream@example.com",
+        "created_at": "2025-01-19T14:33:02Z",
+        "verified": false,
+        "roles": ["user"]
+      },
+      "preferences": {
+        "theme": "system",
+        "language": "fr-FR",
+        "notifications": {
+          "email": false,
+          "sms": false,
+          "push": true
+        }
+      },
+      "stats": {
+        "logins": 87,
+        "last_login": "2026-01-09T17:44:55Z",
+        "projects_owned": 2
+      }
+    }
+  ],
+  "projects": [
+    {
+      "project_id": "p_9001",
+      "name": "Realtime Analytics Engine",
+      "status": "active",
+      "owner_id": "u_1001",
+      "created_at": "2025-08-03T11:00:00Z",
+      "tags": ["analytics", "streaming", "backend"],
+      "settings": {
+        "region": "us-east-1",
+        "autoscale": true,
+        "retention_days": 90
+      },
+      "metrics": {
+        "events_processed": 982374982,
+        "avg_latency_ms": 183,
+        "error_rate": 0.0021
+      }
+    },
+    {
+      "project_id": "p_9002",
+      "name": "Mobile Push Service",
+      "status": "paused",
+      "owner_id": "u_1002",
+      "created_at": "2025-11-21T08:19:44Z",
+      "tags": ["mobile", "notifications"],
+      "settings": {
+        "region": "eu-west-1",
+        "autoscale": false,
+        "retention_days": 30
+      },
+      "metrics": {
+        "events_processed": 128374,
+        "avg_latency_ms": 412,
+        "error_rate": 0.0189
+      }
+    }
+  ],
+  "audit_logs": [
+    {
+      "event_id": "evt_70001",
+      "type": "LOGIN",
+      "user_id": "u_1001",
+      "ip": "192.168.12.44",
+      "user_agent": "Mozilla/5.0",
+      "timestamp": "2026-01-10T22:01:03Z"
+    },
+    {
+      "event_id": "evt_70002",
+      "type": "PROJECT_UPDATE",
+      "user_id": "u_1001",
+      "project_id": "p_9001",
+      "changes": {
+        "autoscale": {
+          "old": false,
+          "new": true
+        }
+      },
+      "timestamp": "2026-01-10T22:15:29Z"
+    }
+  ],
+  "feature_flags": {
+    "beta_dashboard": {
+      "enabled": true,
+      "rollout_percentage": 35
+    },
+    "ai_autotune": {
+      "enabled": false,
+      "rollout_percentage": 0
+    }
+  },
+  "system_health": {
+    "status": "green",
+    "uptime_seconds": 9823749,
+    "services": {
+      "database": {
+        "status": "healthy",
+        "latency_ms": 12
+      },
+      "cache": {
+        "status": "healthy",
+        "hit_rate": 0.97
+      },
+      "queue": {
+        "status": "degraded",
+        "backlog": 1842
+      }
+    }
+  }
+}
